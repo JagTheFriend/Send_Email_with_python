@@ -34,7 +34,7 @@ with open('senditemail.py','r') as f:
 	file_name = f.name # getting the file name
 msg.add_attachment(file_data, filename=file_name) # attaching the file to the email adress
 
-# only applicable for debugging purposes, enter the port number which u chose
+# only applicable for debugging purposes, enter the port number which you chose
 with smtplib.SMTP('localhost', port=1025) as smtp:		
 	smtp.send_message(msg) # sending the message 
-
+	
