@@ -19,7 +19,7 @@ with open('senditemail.py','r') as f:
 
 msg.add_attachment(file_data, filename=file_name) # attaching the file to the email adress
 
-# suitable to gmail
+# suitable for gmail
 with smtplib.SMTP_SSL('smtp.gmail.com', port=465) as smtp:
     smtp.login(user='jagadish.mohanty@iesmail.com',password='mypassword@12',initial_response_ok=True) # logging in
     
